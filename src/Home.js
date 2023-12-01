@@ -24,15 +24,17 @@ const Home = () => {
                     return res.json();
                 })
                 .then(data => {
-                    setBlogs(data);// set nhin kia tha apney useState mein null jaa rahi thi values blogs={blogs} idhr
+                    setBlogs(data);// set nhin kia tha , useState mein null jaa rahi thi values blogs={blogs} idhr
                     setIsPending(false)
+                    setError(null)
                 })
                 .catch(err => {
+                    setIsPending(false)
                     setError(err.message)
-                    console.log(err.message)
+                    // console.log(err.message)
                 })
         }, 1000)
-    }, []);// what does empty array mean? btayen whatsap pr
+    }, []);// what does empty array mean?
 
     return (
         <div className="home">
