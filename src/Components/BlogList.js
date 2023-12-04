@@ -1,4 +1,4 @@
-import {Link } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 const BlogList = ({ blogs, title, handleDelete }) => {
     // const blogs=props.blogs;
@@ -14,8 +14,6 @@ const BlogList = ({ blogs, title, handleDelete }) => {
                         <h2>{blog.title}</h2>
                         <p>Written by {blog.author}</p>
                     </Link>
-
-                    {/* <button onClick={() => handleDelete(blog.id)}>Delete blog</button> */}
                 </div>
             ))}
         </div>

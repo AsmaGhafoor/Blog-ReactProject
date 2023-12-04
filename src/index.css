@@ -17,7 +17,7 @@
 }
 
 .navbar h1 {
-    color: #f1356d;
+    color: #22CE83;
 }
 
 .navbar .links {
@@ -28,10 +28,12 @@
     margin-left: 16px;
     text-decoration: none;
     padding: 6px;
+    font-weight: bolder;
+
 }
 
 .navbar a:hover {
-    color: f1356d;
+    color: #22CE83;
 }
 
 .content {
@@ -53,7 +55,7 @@
 
 .blog-preview h2 {
     font-size: 20px;
-    color: #f1356d;
+    color: #22CE83;
     margin-bottom: 8px;
 }
 
@@ -62,18 +64,22 @@
 }
 
 /* blog details page*/
-.blogdetails h2 {
+.blog-details h2 {
     font-size: 20px;
-    color: #f1356d;
+    color: #22CE83;
     margin-bottom: 10px;
 }
 
-.blogdetails div {
+.blog-details p {
+    font-weight: bold;
+}
+
+.blog-details div {
     margin: 20px 0;
 }
 
-.blogdetails button {
-    background: #f1356d;
+.blog-details button {
+    background: #22CE83;
     color: #fff;
     border: 0;
     padding: 8px;
@@ -95,7 +101,7 @@
 
 .create h2 {
     font-size: 20px;
-    color: #f1356d;
+    color: #22CE83;
     margin-bottom: 30px;
 }
 
@@ -111,7 +117,7 @@
 }
 
 .create button {
-    background: #f1356d;
+    background: #22CE83;
     color: #fff;
     border: 0;
     padding: 8px;

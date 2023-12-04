@@ -9,7 +9,6 @@ const useFetch = (url) => {
         const abortCont = new AbortController();
 
         setTimeout(() => {
-            // fetch('http://localhost:8000/blogs')
             fetch(url, { signal: abortCont.signal })
                 .then(res => {
                     console.log(res)
@@ -19,7 +18,7 @@ const useFetch = (url) => {
                     return res.json();
                 })
                 .then(data => {
-                    setData(data);// set nhin kia tha , useState mein null jaa rahi thi values blogs={blogs} idhr
+                    setData(data);
                     setIsPending(false)
                     setError(null)
                 })
@@ -29,14 +28,12 @@ const useFetch = (url) => {
                     } else {
                         setIsPending(false)
                         setError(err.message)
-                        // console.log(err.message)
                     }
                 })
         }, 1000)
 
         return () => abortCont.abort();
-    }, [url]);// what does empty array mean?
-
+    }, [url]);
     return { data, isPending, error }
 }
 

@@ -11,7 +11,6 @@ const Create = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const blog = { title, body, author };
-        // console.log(blog);
         setIsPending(true);
 
         fetch('http://localhost:8000/blogs', {
@@ -48,8 +47,8 @@ const Create = () => {
                     value={author}
                     onChange={(e) => setAuthor(e.target.value)}
                 >
-                    <option value="mario">mario</option>
-                    <option value="asma">asma</option>
+                    <option value="Asma">Asma</option>
+                    <option value="Mario">Mario</option>
                 </select>
                 {!isPending && <button>Add blog</button>}
                 {isPending && <button disabled>Adding blog...</button>}
